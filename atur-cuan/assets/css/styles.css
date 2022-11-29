@@ -1,0 +1,347 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+input,
+button,
+textarea,
+select {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* Start Styling */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 0 60px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER */
+
+.header {
+    position: relative;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECECEC;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header .logo span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.header .button-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .navbar {
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: 5%;
+    padding: 14px 18px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+.header .navbar.active {
+    display: block;
+}
+
+.header .navbar .navbar-list {
+    text-align: center;
+}
+
+.header .navbar .navbar-list .nav-item:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.header .navbar .navbar-list .nav-item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+/* Section Hero */
+
+#hero{
+    background: rgba(117, 153, 147, 0.35);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 33px 23px;
+}
+
+#hero .container{
+    gap: 72px;
+    padding: 72px 0;
+}
+
+#hero .container .desc{
+    text-align: right;
+}
+
+#hero .container h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: #262424;
+}
+
+#hero .container p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: rgba(0, 0, 0, 0.45);
+}
+
+#hero .container .btn-hero{
+    display: flex;
+    justify-content: center;
+}
+
+#hero .container button{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: #262424;
+    background: #9FC1BB;
+    border-radius: 55px;
+    border: 0;
+
+    padding: 15px 42px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Section Fitur */
+
+#fitur{
+    margin-bottom: 50px;
+}
+
+#fitur h2{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+
+    color: #262424;
+
+    margin: 47px 0;
+}
+
+#fitur .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+#fitur .container .card{
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.55);
+    border-radius: 35px;
+
+    padding: 50px 46px;
+    text-align: center;
+    width: calc((100% / 3) - 130px);
+}
+
+#fitur .container .card h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+
+    color: #262424;
+    margin-top: 20px;
+}
+
+#fitur .container .card p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: rgba(0, 0, 0, 0.45);
+    margin-top: 20px;
+}
+
+/* 
+Halaman Dashboard
+*/
+
+
+/* Section Landing */
+
+#landing{
+    padding-top: 65px;
+    background: linear-gradient(180deg, rgba(169, 204, 198, 0.5) 34.38%, rgba(117, 153, 147, 0) 100%);
+}
+
+#landing .container .left{
+    width: calc(100% * (1 / 3));
+    display: flex;
+    justify-content: center;
+}
+
+#landing .container .right{
+    text-align: center;
+    width: calc(100% * (2 / 3));
+}
+
+#landing .container .right h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 98px;
+    text-transform: uppercase;
+
+    color: #2C2C2C;
+}
+
+#landing .container .right p{
+    margin-bottom: 75px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+
+    color: rgba(0, 0, 0, 0.45);
+}
+
+#landing .container .right span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px;
+
+    color: #61807A;
+}
+
+#landing .container .right h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+
+    color: #262424;
+}
+
+#landing .bottom{
+    padding: 60px 0;
+    gap: 50px;
+}
+
+#landing .container .card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    text-align: center;
+    padding: 45px 65px;
+    width: calc(100% * (1 / 3) - 160px);
+}
+
+#landing .container .card .title{
+    display: flex;
+    align-items: end;
+}
+
+#landing .container .card img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+
+#landing .container .card span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+
+    color: #262424;
+}
+
+#landing .container .card p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: #759993;
+}
